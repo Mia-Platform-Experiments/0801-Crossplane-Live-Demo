@@ -3,5 +3,3 @@ kind: Kustomization
 resources:
   - ../../configuration
   - frengo-test-virtualnetwork.virtualnetwork.crd.yml
-  - frengo-test-public-ip.publicip.crd.yml
-  - frengo-test-subnet.subnet.crd.yml
