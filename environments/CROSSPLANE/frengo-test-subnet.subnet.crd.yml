@@ -1,0 +1,12 @@
+apiVersion: network.azure.upbound.io/v1beta2
+kind: Subnet
+metadata:
+  name: frengo-test-subnet
+spec:
+  providerConfigRef:
+    name: 'azure-default-providerconfig'
+  forProvider:
+    addressPrefixes:
+      - 192.168.1.224/27
+    virtualNetworkName: frengo-test-virtualnetwork
+    resourceGroupName: mia-demo

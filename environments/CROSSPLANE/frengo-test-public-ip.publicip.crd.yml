@@ -1,12 +1,11 @@
 apiVersion: network.azure.upbound.io/v1beta1
-kind: VirtualNetwork
+kind: PublicIP
 metadata:
-  name: frengo-test-virtualnetwork
+  name: frengo-test-public-ip
 spec:
   providerConfigRef:
     name: 'azure-default-providerconfig'
   forProvider:
-    addressSpace:
-      - 10.0.0.0/24
+    allocationMethod: Static
     location: West Europe
     resourceGroupName: mia-demo
