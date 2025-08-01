@@ -7,6 +7,6 @@ spec:
     name: 'azure-default-providerconfig'
   forProvider:
     addressPrefixes:
-      - 10.0.0.6/27
+      - 10.0.0.0/27
     virtualNetworkName: frengo-test-virtualnetwork
     resourceGroupName: mia-demo
