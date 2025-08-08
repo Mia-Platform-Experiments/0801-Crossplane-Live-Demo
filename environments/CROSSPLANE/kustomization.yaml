@@ -2,6 +2,3 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - ../../configuration
-  - arrive-demo-azure-virtualnetwork.virtualnetwork.crd.yml
-  - test-default-azure-public-ip.publicip.crd.yml
-  - test-default-azure-subnet.subnet.crd.yml
