@@ -1,0 +1,11 @@
+apiVersion: network.azure.upbound.io/v1beta1
+kind: PublicIP
+metadata:
+  name: arrive-demo-azure-public-ip
+spec:
+  providerConfigRef:
+    name: 'azure-default-providerconfig'
+  forProvider:
+    allocationMethod: Static
+    location: West Europe
+    resourceGroupName: 'mia-demo'

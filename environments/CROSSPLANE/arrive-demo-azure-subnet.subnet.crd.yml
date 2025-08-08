@@ -1,0 +1,12 @@
+apiVersion: network.azure.upbound.io/v1beta2
+kind: Subnet
+metadata:
+  name: arrive-demo-azure-subnet
+spec:
+  providerConfigRef:
+    name: 'azure-default-providerconfig'
+  forProvider:
+    addressPrefixes:
+      - 10.0.0.0/32
+    virtualNetworkName: arrive-demo-azure-virtualnetwork
+    resourceGroupName: 'mia-demo'
